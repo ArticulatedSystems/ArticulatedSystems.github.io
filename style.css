@@ -1,0 +1,377 @@
+/* Reset margins, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    font-size: 3vw; /* Base font size, scales with viewport width */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh; /* Adjust this value as needed */
+    background-color: white; /* Optional background color */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width:35vw; /* Scales with the viewport width */
+}
+
+.tagline {
+    font-size: 3vw; /* Adjust the font size, scales with viewport width */
+    margin-top: 5vh; /* Space between the logo and the tagline */
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6vh; /* Adjust this value as needed */
+    background: linear-gradient(to bottom, white 0%, pink 20vh, lightblue 55vh); /* Gradient background */    flex: 1;
+}
+
+.pictures-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw; /* Gap scales with the viewport width */
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.picture-item {
+    text-align: center;
+    width: 20vw; /* 20% of the viewport width */
+}
+
+.picture-item p {
+    margin-top: 2vh; /* Space between picture and text */
+    font-size: 3vw; /* Font size scales with viewport width */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+
+.picture {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer; /* Make it clear the image is clickable */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.demo-picture {
+    width: 15vw; /* 15% of the viewport width */
+}
+
+.team-picture {
+    width: 9vw; /* 9% of the viewport width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+
+.demo-button, .team-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.demo-picture {
+    width: 15vw; /* 15% of the viewport width */
+}
+
+.team-picture {
+    width: 9vw; /* 9% of the viewport width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+
+.demo-button, .team-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Specific styles for the demo page */
+.demo-page main {
+    background: linear-gradient(to bottom, white, pink, lightblue);
+}
+
+/* Title strip styles */
+.title-strip {
+    display: flex; /* Sets up a flex container */
+    align-items: center; /* Vertically centers the items within the header */
+    justify-content: center; /* Centers the title strip content */
+    background-color: none; /* Sets background color to white */
+    padding: 1vh 2vw; /* Adds padding for spacing inside the header */
+    position: relative; /* Allows absolute positioning of child elements */
+    min-height: 10vh; /* Ensures enough space for title and icons */
+}
+
+.title-strip-content {
+    display: flex;
+    justify-content: center; /* Centers the title */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.left-icons-container {
+    position: absolute; /* Allows precise positioning */
+    left: 5vw; /* Positions the container from the left edge */
+    display: flex; /* Aligns icons horizontally */
+    gap: 2vw; /* Increases space between the icons */
+    align-items: center; /* Ensures icons are vertically centered */
+    top: 2vh; /* Base top margin */
+}
+
+.title {
+    font-weight: normal; /* Makes the title not bold */
+    font-size: 5vw; /* Sets the font size of the title */
+    position: relative;
+    top: 2vh; /* Margin from the top, adjust as needed */
+}
+
+.tiny-logo {
+    width: 6vw; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer;
+    border: none; /* Removes border */
+    background: none; /* Removes background */
+}
+
+.tiny-team {
+    width: 6vw; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer;
+    border: none; /* Removes border */
+    background: none; /* Removes background */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+ul.emoji-text-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+    margin: 0 auto; /* Center align the list container */
+    max-width: 100%; /* Ensure the list does not exceed the container width */
+}
+
+ul.emoji-text-list li {
+    font-size: 2vw; /* Adjust text size */
+    margin-bottom: 1.5vh; /* Space between list items */
+}
+
+.intro p {
+    font-weight: normal; /* Makes the title not bold */
+    margin: 0 auto;
+    max-width: 80%;
+    font-size: 1.5vw;
+}
+
+/* Experiment set styles */
+.experiment-set {
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.experiment-set h2 {
+    font-weight: normal; /* Makes the title not bold */
+    margin-bottom: 2vh;
+    font-size: 3vw;
+}
+
+/* Video grid styling */
+.experiment-set {
+    text-align: center;
+    margin: 2rem 0;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Increase the gap for better spacing */
+    width: 50vw; /* Adjust to ensure the grid takes a larger width */
+    padding: 0;
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Aspect Ratio Container */
+.video-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 16:9 Aspect Ratio (100 / (16 / 9)) */
+    background: none; /* Optional: background color */
+    overflow: hidden;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        width: 60vw; /* Adjust width for very small screens */
+    }
+
+    .tagline {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+    .pictures-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .picture-item {
+        width: 30vw; /* Adjust width for smaller screens */
+    }
+    .demo-picture {
+        width: 35vw; /* Specific width for demo picture */
+    }
+    .team-picture {
+        width: 21vw; /* Specific width for team picture */
+    }
+    .picture-item p {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+
+    .title {
+        font-size: 7vw; /* Adjusted for tablets */
+        top: 2vh; /* Adjust top margin */
+    }
+    .left-icons-container {
+        top: 2vh; /* Increased margin for larger screens */
+        left: 4vw; /* Adjusted positioning */
+        gap: 1.5vw; /* Adjusted gap */
+    }
+    .tiny-logo, .tiny-team {
+        width: 8vw; /* Adjusted for smaller screens */
+    }
+
+    .intro p {
+        font-size: 4vw;
+    }
+
+    .intro ul.emoji-text-list {
+        display: inline-block; /* Centers the list within .intro */
+        text-align: left; /* Aligns list items to the left within the inline-block container */
+        padding-left: 0; /* Removes default padding */
+        margin: 0 auto; /* Centers the inline-block container horizontally within .intro */
+        list-style: none; /* Removes default bullets */
+    }
+    
+    .intro ul.emoji-text-list li {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+        max-width: 85%; /* Increase max-width for better display on smaller screens */
+        margin-left: 4vh; /* Add space between items when stacked */
+    }
+
+    .experiment-set h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 60vw; /* Adjust width for very small screens */
+    }
+    .tagline {
+        font-size: 9vw; /* Adjust font size for very small screens */
+        margin-left: 2vh; /* Add space between items when stacked */
+        margin-right: 2vh; /* Add space between items when stacked */
+    }
+    .picture-item {
+        width: 40vw; /* Adjust width for very small screens */
+        margin-bottom: 2vh; /* Add space between items when stacked */
+    }
+    .demo-picture {
+        width: 35vw; /* Specific width for demo picture */
+    }
+    .team-picture {
+        width: 21vw; /* Specific width for team picture */
+    }
+    .picture-item p {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+
+    .title {
+        font-size: 10vw; /* Larger font size for very small screens */
+        top: 2.8vh; /* Further increased margin for very small screens */
+    }
+    .left-icons-container {
+        top: 2vh; /* Further increased margin for very small screens */
+        left: 3vw; /* Adjusted positioning */
+        gap: 1vw; /* Adjusted gap */
+    }
+    .tiny-logo, .tiny-team {
+        width: 10vw; /* Adjusted for very small screens */
+    }
+
+    .intro p {
+        font-size: 5vw;
+    }
+
+    .intro ul.emoji-text-list li {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+        max-width: 80%; /* Increase max-width for better display on smaller screens */
+        margin-bottom: 2vh; /* Adds bottom margin between list items */
+        margin-left: 5vh; /* Adds bottom margin between list items */
+        margin-right: 2vh; /* Adds bottom margin between list items */
+    }
+
+    .experiment-set h2 {
+        font-size: 8vw;
+    }
+
+}
+
+/* Responsive adjustments video grids */
+@media (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* Maintain 2-column grid */
+        gap: 3vw; /* Scale gap */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* Maintain 2-column grid */
+        gap: 3vw; /* Increase gap */
+        width: 80vw; /* Adjust width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: repeat(1, 1fr); /* Stack videos in a single column */
+        gap: 4vw; /* Increase gap for better spacing */
+        width: 80vw; /* Full width for very small screens */
+    }
+}

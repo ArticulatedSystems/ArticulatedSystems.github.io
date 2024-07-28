@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preload" href="https://www.youtube.com" as="fetch">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/Articulated_Systems_logo.svg" alt="Articulated Systems" class="logo">
+            <p class="tagline">Automating fast food preparation with robots 🦾</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="pictures-container">
+            <div class="picture-item">
+                <button class="demo-button" onclick="redirectTo('demo.html')">
+                    <img src="img/Cheeseburger.png" alt="Demo" class="picture demo-picture">
+                </button>
+                <p>Demo</p>
+            </div>
+            <div class="picture-item">
+                <button class="team-button" onclick="redirectTo('team.html')">
+                    <img src="img/luigi.png" alt="Team" class="picture team-picture">
+                </button>
+                <p>Team</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
