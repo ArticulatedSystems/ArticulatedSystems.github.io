@@ -44,7 +44,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6vh; /* Adjust this value as needed */
+    padding-top: 7vh; /* Adjust this value as needed */
+    padding-bottom: 7vh; /* Adjust this value as needed */
     background: linear-gradient(to bottom, white 0%, pink 20vh, lightblue 55vh); /* Gradient background */    flex: 1;
 }
 
@@ -236,6 +237,45 @@ ul.emoji-text-list li {
     border: 0;
 }
 
+.tiny-demo {
+    width: 9vw;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.team-member {
+    display: flex;
+    margin-top: 5vh;
+    width: 70vw;
+    align-items: center;
+    background: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    padding: 2vw;
+    border-radius: 2vw;
+}
+
+.team-member-image img {
+    width: 8vw;
+    height: auto;
+    border-radius: 5%;
+    margin-right: 2vw;
+}
+
+.team-member-info {
+    flex: 1;
+}
+
+.team-member-info h2{
+    font-size: 3vw;
+}
+
+.team-member-info p{
+    font-size: 2vw;
+}
+
+
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .logo {
@@ -296,6 +336,31 @@ ul.emoji-text-list li {
     .experiment-set h2 {
         font-size: 6vw;
     }
+
+    .tiny-demo {
+        width: 14vw;
+        height: auto;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    .team-member {
+        width: 90vw;
+    }
+    
+    .team-member-image img {
+        width: 12vw;
+        height: auto;
+        }
+
+    .team-member-info h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+    
+    .team-member-info p {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -350,6 +415,31 @@ ul.emoji-text-list li {
         font-size: 8vw;
     }
 
+    .tiny-demo {
+        width: 18vw;
+        height: auto;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    .team-member {
+        width: 90vw;
+        flex-direction: column; /* Ensure vertical stacking on very small screens */
+    }
+
+    .team-member-image img {
+        width: 25vw;
+        height: auto;
+    }
+
+    .team-member-info h2 {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+    }
+    
+    .team-member-info p {
+        font-size: 1.5rem; /* Even smaller font size for very small screens */
+    }
 }
 
 /* Responsive adjustments video grids */
