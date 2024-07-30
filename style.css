@@ -237,6 +237,14 @@ ul.emoji-text-list li {
     border: 0;
 }
 
+.att-video-description {
+    font-weight: normal; /* Makes the title not bold */
+    margin-top: 1vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 2vw;
+}
+
 .tiny-demo {
     width: 9vw;
     height: auto;
@@ -337,6 +345,14 @@ ul.emoji-text-list li {
         font-size: 6vw;
     }
 
+    .att-video-description {
+        font-weight: normal; /* Makes the title not bold */
+        margin-top: 1vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        font-size: 3vw;
+    }
+
     .tiny-demo {
         width: 14vw;
         height: auto;
@@ -415,6 +431,14 @@ ul.emoji-text-list li {
         font-size: 8vw;
     }
 
+    .att-video-description {
+        font-weight: normal; /* Makes the title not bold */
+        margin-top: 1vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        font-size: 5vw;
+    }
+    
     .tiny-demo {
         width: 18vw;
         height: auto;

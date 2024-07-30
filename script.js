@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoUrls = [
         'https://www.youtube.com/embed/qIazPStT87Y?si=gCwMgY2u3fCJ4EHA&start=80&end=624&autoplay=1&mute=1',
         'https://www.youtube.com/embed/m6swATKSTog?si=_2BY1K6XaSo6NafQ&start=80&end=624&autoplay=1&mute=1',
-        'https://www.youtube.com/embed/cwOJgj0Hvv8?si=AFWhN4HQ1jeBznoo&start=80&end=624&autoplay=1&mute=1',
-        'https://www.youtube.com/embed/fWkwXNmpbcM?si=yEV2HLIN3TFYSsEs&start=80&end=624&autoplay=1&mute=1',
+        'https://www.youtube.com/embed/UspEM0sTjQI?si=nhMKX-wyRilqImYQ&start=80&end=624&autoplay=1&mute=1',
+        'https://www.youtube.com/embed/djMTNx8xf5A?si=0v5M3IlUcjme3vCG&start=80&end=624&autoplay=1&mute=1'
     ];
-
+    
     // Create and load invisible iframes for preloading
     videoUrls.forEach(url => {
         const iframe = document.createElement('iframe');
